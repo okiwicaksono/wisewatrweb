@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-AU"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Water Wise Constructions – design preview</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Jost:wght@400;500;600&display=swap">
+<style>
+:root{--ink:#111;--body:#5F6368;--blue:#0A91C0;--bt:#07779C;--g:#F5F6F4;--bg:#fff;--line:#e3e5e1;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#fff}}
+*,*:before,*:after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--body);font:16px/1.6 Inter,Helvetica,Arial,sans-serif}
+h1,h2,h3{font-family:Jost,Futura,"Century Gothic",sans-serif;color:var(--ink);font-weight:500;line-height:1.1;margin:0 0 .5em}
+h1{font-size:clamp(2.2rem,5vw,3.8rem)}h2{font-size:clamp(1.7rem,3.2vw,2.5rem)}h3{font-size:1.25rem}
+p{margin:0 0 1em;max-width:68ch}a{color:inherit}
+.c{max-width:1120px;margin:0 auto;padding:0 24px}
+section.s{padding:72px 0}.alt{background:var(--g)}
+.dk{background:var(--ink);color:#d8dadc}.dk h2,.dk h3{color:#fff}
+.lb{font-size:.85rem;font-weight:500;color:var(--bt);margin:0 0 .6em}.dk .lb{color:#4cc3ee}
+.b,.w,.o{display:inline-block;padding:13px 24px;border-radius:6px;font:500 1rem Jost,sans-serif;text-decoration:none;border:1.5px solid var(--ink);cursor:pointer}
+.b{background:var(--ink);color:#fff}.w{background:#fff;color:var(--ink);border-color:#fff}.o{background:none;color:#fff;border-color:#fff}
+.o.d{color:var(--ink);border-color:var(--ink)}
+.top{background:var(--ink);color:#fff;font-size:.85rem}.top .c{display:flex;justify-content:space-between;gap:12px;padding-top:7px;padding-bottom:7px}
+.pv{background:#fff7d6;font-size:.8rem;text-align:center;padding:5px;color:#6b5a00}
+header{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line)}
+header .c{display:flex;align-items:center;gap:24px;min-height:72px}
+.logo{font:600 1.2rem/1.1 Jost,sans-serif;color:var(--ink);text-decoration:none;letter-spacing:.02em}.logo span{display:block;font-size:.7rem;font-weight:400;color:var(--body)}
+nav{margin-left:auto;display:flex;gap:22px;align-items:center}nav a{text-decoration:none;font-size:.95rem}nav a.on{color:var(--ink);border-bottom:2px solid var(--blue)}
+#mb{display:none;margin-left:auto;background:none;border:1px solid var(--ink);border-radius:6px;padding:8px 12px;font:inherit}
+@media(max-width:1000px){#mb{display:block}nav{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;padding:16px 24px;border-bottom:1px solid var(--line)}nav.open{display:flex}header .b{display:none}}
+.hero{position:relative;min-height:78vh;display:flex;align-items:center;color:#fff;background:linear-gradient(115deg,#0a3347 0%,#0A91C0 52%,#4CAA2E 100%)}
+.hero:before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.5)}
+.hero:after{content:"";position:absolute;right:6%;top:18%;width:34%;height:58%;border:10px solid rgba(255,255,255,.22);border-radius:34px;background:rgba(10,145,192,.35)}
+.hero .c{position:relative;z-index:1}.hero h1{color:#fff;max-width:14em}.hero p{font-size:1.15rem;max-width:36em;color:#f0f2f3}
+.hero .lb{color:#bfe9f7}.btns{display:flex;gap:12px;flex-wrap:wrap}
+.ph{position:absolute;right:16px;bottom:10px;z-index:1;font-size:.75rem;color:#ffffffb0}
+.strip{background:#fff;border-bottom:1px solid var(--line)}.strip .c{display:flex;gap:24px;align-items:center;flex-wrap:wrap;padding-top:22px;padding-bottom:22px}
+.strip h3{margin:0}.strip p{margin:0}
+.g4,.g3,.g2{display:grid;gap:24px}.g4{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}.g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.cd{background:#fff;border:1px solid var(--line);border-radius:8px;padding:24px}.dk .cd{background:#1b1b1b;border-color:#333}
+.ft h3:before{content:"";display:block;width:28px;height:3px;background:var(--blue);margin-bottom:12px}
+.ba{display:grid;grid-template-columns:1fr 1fr;border-radius:8px;overflow:hidden;height:150px;font-size:.75rem;color:#fff}
+.ba i{padding:8px;font-style:normal;background:linear-gradient(#5f9fb5,#2b6e86)}.ba i+i{background:linear-gradient(#7fbf5f,#3d8a2a)}
+.ph3{height:130px;border-radius:8px;background:linear-gradient(135deg,#cfd6d2,#aab4af);margin-bottom:12px}
+.stp{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;counter-reset:n}.stp div:before{counter-increment:n;content:counter(n);font:500 2.4rem Jost,sans-serif;color:#4cc3ee;display:block}
+.ck{list-style:none;padding:0;margin:0}.ck li{padding:6px 0 6px 28px;position:relative}.ck li:before{content:"";position:absolute;left:0;top:13px;width:14px;height:8px;border-left:3px solid var(--blue);border-bottom:3px solid var(--blue);transform:rotate(-45deg)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}.chips span{border:1px solid var(--ink);border-radius:99px;padding:6px 16px;font-size:.9rem;background:#fff}
+.call{border-left:4px solid var(--blue);background:var(--g);padding:18px 22px;border-radius:0 8px 8px 0;margin-top:20px}.call h3{margin-bottom:.3em}
+.q{border-top:1px solid var(--line);padding:14px 0}.q a{color:var(--ink);text-decoration:none;font-weight:500}
+.ow{background:#ffe699;color:#5a4300;padding:2px 8px;border-radius:4px;font-size:.85rem}
+.pg{display:none}.pg.on{display:block}.pt{padding:64px 0 24px}
+form{display:grid;gap:14px;max-width:640px}label{font-size:.9rem;color:var(--ink);display:grid;gap:4px}input,select,textarea{font:inherit;padding:11px;border:1px solid #b9bdb8;border-radius:6px;background:#fff}
+footer{background:var(--ink);color:#c9cbcd;padding:56px 0 28px;font-size:.92rem}footer h3{color:#fff;margin-bottom:.3em}footer a{display:block;text-decoration:none;padding:2px 0}
+.sm{border-top:1px solid #333;margin-top:28px;padding-top:18px;font-size:.8rem;color:#9a9da0;max-width:none}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style></head><body>
+<div class="pv">Design preview only – the final Wix build will differ in spacing, fonts and behaviour. Hero image is a placeholder.</div>
+<div class="top"><div class="c"><span>Specialising in pool removals, backfilling and complete landscaping solutions.</span><a href="tel:0499581935">0499 581 935</a></div></div>
+<header><div class="c"><a class="logo" href="#home">WATER WISE CONSTRUCTIONS<span>Pool conversion specialists</span></a>
+<button id="mb" aria-label="Menu">Menu</button>
+<nav id="nv"><a href="#services">Services</a><a href="#how">How It Works</a><a href="#cost">Cost</a><a href="#guides">Guides</a><a href="#areas">Service Areas</a><a href="#about">About Us</a><a href="#contact">Contact</a></nav>
+<a class="b" href="#quote">Request a Quote</a></div></header>
+<main>
+<div class="pg" id="p-home">
+<section class="hero"><div class="c"><p class="lb">Professional Residential Pool Removal Services</p><h1>Swimming Pool Removal &amp; Landscaping – Gold Coast &amp; Brisbane</h1>
+<p>Make better use of your backyard by removing an unwanted, outdated or damaged pool. From full or partial demolition to backfilling and site restoration, we help homeowners across the Gold Coast and Brisbane reclaim their outdoor space.</p>
+<div class="btns"><a class="w" href="#quote">Get a Free Quote</a><a class="o" href="tel:0499581935">Give Us a Call: 0499 581 935</a></div></div><span class="ph">Hero image placeholder</span></section>
+<div class="strip"><div class="c"><div><p class="lb" style="margin:0">24-hour response target</p><h3>Got a pool to remove?</h3></div><p style="flex:1;min-width:240px">Share a few details about the pool and project. We’ll review the requirements and aim to get back to you within 24 hours. <small>A site visit may be needed to give an accurate fixed quote.</small></p><a class="b" href="#quote">Request Project Review</a></div></div>
+<section class="s"><div class="c g4 ft">
+<div><h3>Various Pool Types</h3><p>Removal solutions for a range of residential pool types</p></div>
+<div><h3>Site &amp; Machinery Matching</h3><p>Equipment selected to suit side access and site conditions</p></div>
+<div><h3>Backfill, Compaction &amp; Landscaping</h3><p>Planning beyond the demolition to the finished ground</p></div>
+<div><h3>Brisbane to Gold Coast Service Area</h3><p>Serving Brisbane, the Gold Coast and surrounding areas</p></div></div></section>
+<section class="s alt"><div class="c"><p class="lb">Pool removal &amp; landscaping</p><h2>Remove the pool, Reclaim the space</h2>
+<p>An old or unused swimming pool can take up valuable backyard space while adding ongoing maintenance and limiting future renovations. Removing it gives you the freedom to create a lawn, garden, entertaining area or expand your next project.</p>
+<p>Every pool is different, so the right removal approach depends on the pool type, site access, surrounding structures and your plans for the area. We assess each property individually to ensure the site is prepared properly for its next use.</p>
+<h3>Planned for How You’ll Use the Space Next</h3></div></section>
+<section class="s"><div class="c"><h2>Pool Removal Services</h2><p>Partial vs Complete Removal. Finding Your Best Match. The right choice depends entirely on your backyard goals.</p>
+<div class="g3"><div class="cd"><h3>Pool Backfilling</h3><p>Pool decommissioning and backfilling can be a practical option when the goal is to reclaim the space for other uses.</p></div>
+<div class="cd"><h3>Partial Pool Removal</h3><p>Specific sections of the pool are demolished, with the remaining structure then prepared and backfilled. The intended use of the area should be taken into account when determining whether this approach is appropriate.</p></div>
+<div class="cd"><h3>Complete Pool Removal</h3><p>The entire pool structure is removed from the ground, along with the associated materials and debris. The area is then backfilled and prepared for its next use, providing a clean slate for future plans.</p></div></div></div></section>
+<section class="s dk"><div class="c"><h2>Matched with independent contractors</h2><p>Water Wise Constructions reviews your enquiry and connects suitable projects with independent contractors. The contractor inspects your site, prepares the quote and carries out the work, and the decision to proceed is always yours.</p></div></section>
+<section class="s"><div class="c"><p class="lb">Transformation Gallery</p><h2>From Unused Pool to Usable Space</h2><p>Real pool removal transformations, showing how unused pools become clean, level, and landscaping-ready spaces.</p>
+<div class="g4"><div><div class="ba"><i>Before</i><i>After</i></div><p>Pool Area to Lawn</p></div><div><div class="ba"><i>Before</i><i>After</i></div><p>Ground Reinstated</p></div><div><div class="ba"><i>Before</i><i>After</i></div><p>Space Reclaimed</p></div><div><div class="ba"><i>Before</i><i>After</i></div><p>From Pool to Finished Yard</p></div></div></div></section>
+<section class="s alt"><div class="c g2"><div><p class="lb">What’s Involved in Pool Removal</p><h2>Removing the Pool Is Just the Start</h2><p>Pool removal can involve much more than taking out the pool itself. Depending on the site, the work may include service disconnections, demolition, excavation, removal of concrete and steel, imported fill, compaction, drainage and preparation of the final ground levels.</p></div>
+<ul class="ck"><li>Pool structure removal</li><li>Partial demolition and pool decommissioning</li><li>Suitable fill and controlled backfilling</li><li>Solutions for tight or restricted sites</li><li>Coordination of topsoil, turf, paving and landscaping</li></ul></div></section>
+<section class="s dk"><div class="c"><p class="lb">How the Process Works</p><h2>Turning Unwanted Pools into Ready-to-Use Space</h2><p>Every removal is planned around site access and future land use, matching the right demolition and fill technique to your property.</p>
+<div class="stp"><div><h3>Site Assessment</h3><p>Initial assessment covers the pool type, size, access, surrounding structures and future use of the space.</p></div><div><h3>Scope &amp; Quotation</h3><p>The contractor establishes what is required for demolition, disposal, backfilling, drainage, approvals and site reinstatement.</p></div><div><h3>Removal &amp; Site Compaction</h3><p>Once the agreed removal work is complete, the remaining void is prepared and backfilled.</p></div><div><h3>Site Reinstatement &amp; Finishing</h3><p>The finished area can be graded and prepared for turf, landscaping or other planned uses.</p></div></div>
+<p style="margin-top:24px"><a class="w" href="#how">See how it works</a></p></div></section>
+<section class="s"><div class="c"><p class="lb">No Two Pool Removals Are the Same</p><h2>Every Site Calls for a Different Approach</h2><p>The pool structure, reinforcement, surrounding surfaces, available access and nearby structures can all affect how the work is carried out and what equipment is best suited to the site.</p>
+<div class="g3"><div><div class="ph3"></div><p>Large pool shell in an open site</p></div><div><div class="ph3"></div><p>Tight access beside the home</p></div><div><div class="ph3"></div><p>Reinforced pool structure</p></div></div></div></section>
+<section class="s alt"><div class="c"><p class="lb">Cost factors</p><h2>What Shapes Your Quote?</h2><p>Size isn't the only factor. Access limits, disposal, and future land use play a major role in your overall quote.</p>
+<div class="g3"><div class="cd"><h3>Pool Construction</h3><p>The pool structure, wall thickness, and coping/surrounding paving affect the demolition technique required.</p></div><div class="cd"><h3>Site Access</h3><p>Gate widths, side access, retaining walls and nearby structures can influence the equipment, labour and time required.</p></div><div class="cd"><h3>Post-Removal Plans</h3><p>Preparing the site for a lawn versus a building slab may require a different scope of work.</p></div></div>
+<p style="margin-top:24px"><a class="b" href="#cost">Pool Removal Cost Guide</a></p></div></section>
+<section class="s"><div class="c"><p class="lb">Our Brisbane &amp; Gold Coast Service Area</p><h2>Pool removal across the Brisbane and Gold Coast region</h2><p>We accept pool removal, demolition and backfilling enquiries across Brisbane and the Gold Coast, from northern and central suburbs to coastal and hinterland areas.</p>
+<div class="chips"><span>Central Gold Coast</span><span>Northern Gold Coast</span><span>Coastal and Southern Gold Coast</span><span>Hinterland and Acreage</span><span>Brisbane – Northern</span><span>Brisbane – Central &amp; Inner</span><span>Brisbane – Southern</span><span>Brisbane – Eastern &amp; Bayside</span><span>Brisbane – Western</span><span>Brisbane – Outer West / Hills &amp; Acreage</span></div>
+<a class="b" href="#areas">View All Service Areas</a>
+<div class="call"><h3>Can’t find your suburb listed?</h3><p style="margin:0">Send us your address and our team will quickly confirm whether a suitable contractor services your property.</p></div></div></section>
+<section class="s alt"><div class="c"><h2>Common questions</h2><div class="q"><a href="#faq">How much does pool removal cost?</a></div><div class="q"><a href="#faq">Do I need building or council approval to remove a pool?</a></div><div class="q"><a href="#faq">How long does the pool removal process take from start to finish?</a></div><p style="margin-top:20px"><a class="b" href="#faq">See all FAQs</a></p></div></section>
+<section class="s dk"><div class="c g2"><div><h2>Planning to remove your pool?</h2><p>Send us your suburb, pool type and access details and we’ll review your project.</p><a class="w" href="#quote">Request a Quote</a></div><div><h3>Call us now!</h3><p>Discuss your pool removal project with our team before completing the form.</p><p><a href="tel:0499581935" style="color:#fff;font:500 1.6rem Jost,sans-serif;text-decoration:none">0499 581 935</a></p></div></div></section>
+</div>
+
+<div class="pg" id="p-services"><div class="c pt"><p class="lb">Services</p><h1>Pool Removal</h1><p>Removing an unwanted pool creates more usable space for lawns, gardens, outdoor entertaining, sheds or future improvements. Each project is tailored to the property and how you plan to use your backyard. We connect suitable enquiries with independent contractors across Brisbane and the Gold Coast.</p></div>
+<section class="s alt"><div class="c g3"><div class="cd"><h3>Complete removal</h3><p>The entire pool structure is removed, then the area is backfilled and prepared for its next use.</p></div><div class="cd"><h3>Partial removal</h3><p>Selected sections are demolished and the remaining structure is prepared and backfilled.</p></div><div class="cd"><h3>Pool filling and backfilling</h3><p>Decommissioning and backfilling to reclaim the space for other uses.</p></div></div>
+<div class="c" style="margin-top:32px"><h3>Concrete and fibreglass pools</h3><p>The structure, reinforcement and access all change the method. Individual pages for each type are not in this preview.</p><a class="b" href="#quote">Request a Quote</a></div></section></div>
+
+<div class="pg" id="p-how"><div class="c pt"><p class="lb">How It Works</p><h1>From enquiry to finished yard</h1><p>This is a summary of the process page. Full wording is in the content plan.</p></div>
+<section class="s alt"><div class="c stp" style="--x:0"><div><h3>Send your details</h3><p>Suburb, pool type, access and photos help us review sooner.</p></div><div><h3>Project review</h3><p>We review the enquiry and the likely scope.</p></div><div><h3>Connect with a contractor</h3><p>Suitable projects go to independent contractors, who inspect and quote.</p></div><div><h3>Your decision</h3><p>You decide whether to proceed.</p></div></div></section>
+<section class="s"><div class="c"><h3>What happens on site</h3><p>Site assessment, scope and quotation, removal and compaction, then reinstatement and finishing, as shown on the Home page.</p><a class="b" href="#quote">Request a Quote</a></div></section></div>
+
+<div class="pg" id="p-cost"><div class="c pt"><p class="lb">Cost</p><h1>What shapes your quote?</h1><p>Size isn't the only factor. Access limits, disposal and future land use play a major role in your overall quote.</p></div>
+<section class="s alt"><div class="c g3"><div class="cd"><h3>Pool Construction</h3><p>Structure, wall thickness and surrounding paving affect the demolition technique.</p></div><div class="cd"><h3>Site Access</h3><p>Gate widths, side access, retaining walls and nearby structures affect equipment, labour and time.</p></div><div class="cd"><h3>Post-Removal Plans</h3><p>A lawn and a building slab can need different scopes.</p></div></div>
+<div class="c" style="margin-top:32px"><p>A quote checklist and a link to the detailed cost guide will sit here. <span class="ow">OWNER: confirm the “free quote” wording</span></p><a class="b" href="#quote">Request a Quote</a></div></section></div>
+
+<div class="pg" id="p-guides"><div class="c pt"><p class="lb">Guides</p><h1>Pool removal guides for homeowners</h1><p>Plain-English guides to help you plan, compare quotes and prepare your backyard. The guide pages themselves are not in this preview.</p></div>
+<section class="s alt"><div class="c g3"><div class="cd"><h3>Complete vs Partial Pool Removal</h3><p>Compare cost, drainage, future use and records.</p></div><div class="cd"><h3>Remove or Fill In a Pool</h3><p>What “fill it in” can mean, and what to clarify.</p></div><div class="cd"><h3>Limited Access</h3><p>How narrow gates and tight access change the job.</p></div><div class="cd"><h3>Soil Compaction</h3><p>Why ground settles and how to reduce the risk.</p></div><div class="cd"><h3>Cost Guide</h3><p>What can influence your pool removal cost.</p></div></div></section></div>
+
+<div class="pg" id="p-areas"><div class="c pt"><p class="lb">Service Areas</p><h1>Pool removal across Brisbane and the Gold Coast</h1><p>We accept pool removal, demolition and backfilling enquiries across Brisbane and the Gold Coast, from northern and central suburbs to coastal and hinterland areas. Full suburb lists are in the content plan.</p>
+<div class="chips"><span>Central Gold Coast</span><span>Northern Gold Coast</span><span>Coastal and Southern Gold Coast</span><span>Hinterland and Acreage</span><span>Brisbane – Northern</span><span>Brisbane – Central &amp; Inner</span><span>Brisbane – Southern</span><span>Brisbane – Eastern &amp; Bayside</span><span>Brisbane – Western</span><span>Brisbane – Outer West / Hills &amp; Acreage</span></div>
+<div class="call"><h3>Can’t find your suburb listed?</h3><p style="margin:0 0 12px">Send us your address and our team will quickly confirm whether a suitable contractor services your property.</p><a class="b" href="#quote">Request a Quote</a></div></div><div style="height:48px"></div></div>
+
+<div class="pg" id="p-faq"><div class="c pt"><p class="lb">FAQ</p><h1>Pool removal questions</h1><p>Questions homeowners often ask. Answers are in the content plan and still need owner review. <span class="ow">OWNER: verify regulatory statements</span></p>
+<div class="q"><b>How much does pool removal cost?</b></div><div class="q"><b>Do I need building or council approval to remove a pool?</b></div><div class="q"><b>Who handles approvals?</b></div><div class="q"><b>Can a pool be filled with dirt?</b></div><div class="q"><b>How long does the pool removal process take from start to finish?</b></div><div class="q"><b>What information is needed for a pool removal quote?</b></div></div><div style="height:48px"></div></div>
+
+<div class="pg" id="p-about"><div class="c pt"><p class="lb">About Us</p><h1>About Water Wise Constructions</h1><p>Water Wise Constructions helps Brisbane and Gold Coast homeowners plan pool removal, filling and backyard reinstatement. We review your project and connect suitable enquiries with independent contractors who inspect, quote and carry out the work.</p>
+<p><span class="ow">OWNER</span> Story, 3–4 values, ABN and licence or insurance statements go here once confirmed.</p><a class="b" href="#quote">Request a Quote</a></div><div style="height:48px"></div></div>
+
+<div class="pg" id="p-contact"><div class="c pt"><p class="lb">Contact</p><h1>Discuss your pool removal plans</h1>
+<div class="g2"><div class="cd"><h3>Call us</h3><p><a href="tel:0499581935">0499 581 935</a></p></div><div class="cd"><h3>Email us</h3><p><a href="mailto:lee@waterwiseconstructions.com.au">lee@waterwiseconstructions.com.au</a></p></div></div>
+<p style="margin-top:20px"><span class="ow">OWNER</span> Business hours and ABN to be confirmed.</p><a class="b" href="#quote">Request a Quote</a></div><div style="height:48px"></div></div>
+
+<div class="pg" id="p-quote"><div class="c pt"><p class="lb">Request a Quote</p><h1>Tell us about your pool</h1><p>New enquiries are reviewed with a target of 24 hours. This preview form does not send anything.</p>
+<form onsubmit="event.preventDefault();this.querySelector('output').textContent='Preview only: nothing was sent.'">
+<label>Full name<input required></label><label>Phone<input type="tel" required></label><label>Email<input type="email" required></label><label>Property suburb<input required></label>
+<label>Pool type<select><option>Concrete</option><option>Fibreglass</option><option>Above-ground</option><option>Spa or plunge pool</option><option>Not sure</option></select></label>
+<label>Narrowest access width<input placeholder="Gate or side path"></label>
+<label>Planned use afterwards<select><option>Lawn or garden</option><option>Paving or patio</option><option>Future building</option><option>Not sure</option></select></label>
+<label>Photos (optional)<input type="file" multiple></label><label>Additional details<textarea rows="4"></textarea></label>
+<label style="display:flex;gap:8px;align-items:flex-start"><input type="checkbox" required> <span>I consent to my project details being shared with independent contractors so they can contact me about a quote.</span></label>
+<button class="b" type="submit">Send enquiry</button><output></output></form></div><div style="height:48px"></div></div>
+</main>
+<footer><div class="c g3"><div><h3>Water Wise Constructions Pty Ltd</h3><p>Pool removal, partial demolition, backfilling and landscaping across Brisbane and the Gold Coast.</p><p>0499 581 935<br>lee@waterwiseconstructions.com.au<br><span class="ow">ABN: OWNER</span></p></div>
+<div><a href="#services">Services</a><a href="#guides">Guides</a><a href="#areas">Service Areas</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><a>Privacy Policy</a><a>Terms</a></div></div>
+<div class="c"><p class="sm">Water Wise Constructions connects homeowners with independent contractors. Information on this website is general in nature and is not engineering, legal, building certification, planning or financial advice.</p></div></footer>
+<script>
+var P=['home','services','how','cost','guides','areas','faq','about','contact','quote'];
+function r(){var h=location.hash.slice(1);if(P.indexOf(h)<0)h='home';
+P.forEach(function(p){document.getElementById('p-'+p).classList.toggle('on',p===h)});
+document.querySelectorAll('nav a').forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+h)});
+document.getElementById('nv').classList.remove('open');window.scrollTo(0,0)}
+addEventListener('hashchange',r);r();
+document.getElementById('mb').onclick=function(){document.getElementById('nv').classList.toggle('open')};
+</script></body></html>
